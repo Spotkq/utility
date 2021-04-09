@@ -1,0 +1,90 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Utlity = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local CMDX = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local XBUTTON = Instance.new("TextButton")
+local FATESADMIN = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local FA = Instance.new("TextButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Utlity.Name = "Utlity"
+Utlity.Parent = game.CoreGui
+
+Frame.Parent = Utlity
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.0428832099, 0, 0.0417457297, 0)
+Frame.Size = UDim2.new(0, 100, 0, 100)
+
+CMDX.Name = "CMD-X"
+CMDX.Parent = Frame
+CMDX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CMDX.BorderSizePixel = 0
+CMDX.Position = UDim2.new(-0.33126694, 0, -0.0842857361, 0)
+CMDX.Size = UDim2.new(0, 58, 0, 59)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
+UIGradient.Parent = CMDX
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = CMDX
+
+XBUTTON.Name = "XBUTTON"
+XBUTTON.Parent = CMDX
+XBUTTON.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XBUTTON.BackgroundTransparency = 1.000
+XBUTTON.Position = UDim2.new(0.0702179074, 0, 0.16216214, 0)
+XBUTTON.Size = UDim2.new(0, 49, 0, 39)
+XBUTTON.Font = Enum.Font.SourceSans
+XBUTTON.Text = "CMD-X"
+XBUTTON.TextColor3 = Color3.fromRGB(255, 255, 255)
+XBUTTON.TextScaled = true
+XBUTTON.TextSize = 14.000
+XBUTTON.TextWrapped = true
+XBUTTON.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+FATESADMIN.Name = "FATESADMIN"
+FATESADMIN.Parent = Frame
+FATESADMIN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FATESADMIN.BorderColor3 = Color3.fromRGB(27, 42, 53)
+FATESADMIN.BorderSizePixel = 0
+FATESADMIN.Position = UDim2.new(0.358733058, 0, -0.0842857361, 0)
+FATESADMIN.Size = UDim2.new(0, 58, 0, 59)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
+UIGradient_2.Parent = FATESADMIN
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = FATESADMIN
+
+FA.Name = "FA"
+FA.Parent = FATESADMIN
+FA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FA.BackgroundTransparency = 1.000
+FA.Position = UDim2.new(0.0702179074, 0, 0.16216214, 0)
+FA.Size = UDim2.new(0, 49, 0, 39)
+FA.Font = Enum.Font.SourceSans
+FA.Text = "FA"
+FA.TextColor3 = Color3.fromRGB(255, 255, 255)
+FA.TextScaled = true
+FA.TextSize = 14.000
+FA.TextWrapped = true
+FA.MouseButton1Click:Connect(function()
+	local Key = "oHF1aG0KzvAm"
+	loadstring(game:HttpGet("https://fate0.xyz/scripts/fates-admin/new-script"))()
+end)
+
+UIAspectRatioConstraint.Parent = Frame
